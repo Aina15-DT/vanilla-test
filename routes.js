@@ -32,11 +32,25 @@ function getRoutes() {
 
     })
 
-    modules.app.post('/acheter', function (req, res) {
+    modules.app.post('/cuir', function (req, res) {
 
-        //  var acheter = req.body.acheter
+        console.log("achat cuir...");
 
-        // console.log(req.body.idpanier, req.body.montant, req.body.nom, req.body.reference);
+        vanilla.vpayement(req.body.idpanier, req.body.montant, req.body.nom, req.body.reference, process.env.adr_ip)
+        res.redirect("/");
+
+    })
+
+
+    modules.app.post('/rock', function (req, res) {
+
+        vanilla.vpayement(req.body.idpanier, req.body.montant, req.body.nom, req.body.reference, process.env.adr_ip)
+        res.redirect("/");
+
+    })
+
+
+    modules.app.post('/bracelet', function (req, res) {
 
         vanilla.vpayement(req.body.idpanier, req.body.montant, req.body.nom, req.body.reference, process.env.adr_ip)
         res.redirect("/");

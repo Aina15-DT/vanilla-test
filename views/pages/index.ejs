@@ -14,11 +14,241 @@
     </header>
 
     <main>
-        <%- include('../partials/form')-%>
+        <%=produit%>
 
+        <div id="div" style="margin-left:100px;margin-top:80px;margin-right:0px;background-position: top right;">
+            <h3 style="margin-top:10px;"><i class="fa fa-angle-right"></i> Nos articles</h3>
+            <div class="row mt" style="margin-top:50px;">
+                <div class="col-md-4 col-sm-4 mb">
+                    <div class="darkblue-panel pn">
+
+                        <div id="profile-02">
+
+                        </div>
+                        <footer>
+                            <div class="pull-left">
+                                <h5><i class="fa fa-money"></i> 50 000 Ar</h5>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-small btn-theme04" type="button" data-toggle="modal"
+                                    data-target="#modal1">ACHETER</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mb">
+                    <div class="darkblue-panel pn">
+                        <div id="profile-a">
+
+                        </div>
+                        <footer>
+                            <div class="pull-left">
+                                <h5><i class="fa fa-money"></i> 200 000 Ar</h5>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-small btn-theme04" type="button" data-toggle="modal"
+                                    data-target="#modal2">ACHETER</button>
+                            </div>
+                        </footer>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-sm-4 mb">
+                    <div class="darkblue-panel pn">
+                        <div id="profile-b">
+
+                        </div>
+                        <footer>
+                            <div class="pull-left">
+                                <h5><i class="fa fa-money"></i> 200 000 Ar</h5>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-small btn-theme04" type="button" data-toggle="modal"
+                                    data-target="#modal3">ACHETER</button>
+                            </div>
+                        </footer>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!----MODALS*************************************************************-->
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <form method="POST" action="/cuir">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #ed5565;">
+                            <button type="button" style="color: black;" class="close" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 style="text-align: center" class="modal-title" id="myModalLabel">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i> ACHAT <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-7">
+
+                                        <h5 style="font-weight: bold;"> <i class="fa fa-angle-right"></i> SAC BANANA
+                                            en CUIR</h5>
+                                        <img src="images/product.jpg" alt="" width="300" height="200">
+
+                                    </div>
+                                    <div class="col-md-4" style="margin-top:50px;">
+                                        <label for="idpanier">ID du panier: </label>
+                                        <input style="background-color: white;" type="text" id="idpanier"
+                                            class="form-control" name="idpanier" value="123" readonly>
+                                        <br>
+                                        <label for="montant">Prix (en Ariary):</label>
+                                        <input style="background-color: white;" type="text" id="montant" name="montant"
+                                            value="50 000" class="form-control" readonly>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <label for="nom">Nom:</label>
+                                <input width="100" style="background-color: white;" type="text" id="nom" name="nom"
+                                    value="Digi-Talent" class="form-control" readonly>
+                                <br>
+                                <label for="reference">Réference de l'article</label>:
+                                <input style="background-color: white;" type="text" id="reference" name="reference"
+                                    value="47896644" class="form-control" readonly>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn"
+                                style="background-color: #444c57;color: white;">CONFIRMER</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <form method="POST" action="/rock">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #ed5565;">
+                            <button type="button" style="color: black;" class="close" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 style="text-align: center" class="modal-title" id="myModalLabel">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i> ACHAT <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h5 style="font-weight: bold"> <i class="fa fa-angle-right"></i> ACCESSOIRES
+                                            "ROCKERS"</h5>
+                                        <img src="images/portfolio/port04.jpg" alt="" width="300" height="200">
+
+                                    </div>
+                                    <div class="col-md-4" style="margin-top:50px;">
+                                        <label for="idpanier">ID du panier: </label>
+                                        <input style="background-color: white;" type="text" id="idpanier"
+                                            class="form-control" name="idpanier" value="476" readonly>
+                                        <br>
+                                        <label for="montant">Prix (en Ariary):</label>
+                                        <input style="background-color: white;" type="text" id="montant" name="montant"
+                                            value="200 000" class="form-control" readonly>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <label for="nom">Nom:</label>
+                                <input width="100" style="background-color: white;" type="text" id="nom" name="nom"
+                                    value="Digi-Talent" class="form-control" readonly>
+                                <br>
+                                <label for="reference">Réference de l'article</label>:
+                                <input style="background-color: white;" type="text" id="reference" name="reference"
+                                    value="11756031" class="form-control" readonly>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn"
+                                style="background-color: #444c57;color: white;">CONFIRMER</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <form method="POST" action="/bracelet">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #ed5565;">
+                            <button type="button" style="color: black;" class="close" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 style="text-align: center" class="modal-title" id="myModalLabel">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i> ACHAT <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h5 style="font-weight: bold"> <i class="fa fa-angle-right"></i> BRACELET EN
+                                            ARGENT</h5>
+                                        <img src="images/portfolio/port08.jpg" alt="" width="300" height="200">
+
+                                    </div>
+                                    <div class="col-md-4" style="margin-top:50px;">
+                                        <label for="idpanier">ID du panier: </label>
+                                        <input style="background-color: white;" type="text" id="idpanier"
+                                            class="form-control" name="idpanier" value="676" readonly>
+                                        <br>
+                                        <label for="montant">Prix (en Ariary):</label>
+                                        <input style="background-color: white;" type="text" id="montant" name="montant"
+                                            value="200 000" class="form-control" readonly>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <label for="nom">Nom:</label>
+                                <input width="100" style="background-color: white;" type="text" id="nom" name="nom"
+                                    value="Digi-Talent" class="form-control" readonly>
+                                <br>
+                                <label for="reference">Réference de l'article</label>:
+                                <input style="background-color: white;" type="text" id="reference" name="reference"
+                                    value="75633100" class="form-control" readonly>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn"
+                                style="background-color: #444c57;color: white;">CONFIRMER</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
-    <footer>
+    <footer id="footer" style="margin-top:80%;">
         <%- include('../partials/footer')-%>
 
     </footer>
